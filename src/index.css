@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-script: "Great Vibes", cursive;
+}
+
+/* Luxury Custom Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfcf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #5A5A40;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a8a6b;
+}
+
+/* Custom animation extensions */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-ping-slow {
+  animation: ping-slow 2.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* Hide native arrows inside select dropdowns */
+.custom-select-arrow {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%235A5A40' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2rem;
+}
+
+/* Standard smooth body reset */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  background-color: #fdfcf7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fdfcf7;
+  color: #3d3d3d;
+}

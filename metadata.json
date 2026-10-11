@@ -1,0 +1,6 @@
+{
+  "name": "Royal Hair Line",
+  "description": "Premium Unisex Salon — Official luxury website featuring immersive design, detailed service structure, active booking forms, and a responsive Natural Tones theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
